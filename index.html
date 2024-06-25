@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body >
+    <section class="d-flex justify-content-center align-items-center min-vh-100 rounded-2 mt-5 mb-5">
+        <div class="container  p-3 rounded-4 shadow">
+            <nav class=" ">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="weather ">
+                        <span class="fst-italic fs-2">Weather</span>
+                        <i class="fa-solid fa-cloud"></i>
+                    </h2>
+                    <div class=" d-flex justify-content-end image">
+                        <img src="images/moon.png" id="icon" class="" alt="">
+                    </div>
+                </div>
+                <div class="search" >
+                    <input type="text" id="search" placeholder=" search city..">
+                    <div class="currentlocation">
+                    <div class="location">Use Current Location</div>
+                </div>
+                </div>
+                
+            </nav>
+
+
+
+                <div class="data d-flex justify-content-between align-items-center">
+                    <div class="my-3 d-flex justify-content-center align-items-center gap-3  name ">
+                        <i class="fa-solid fa-location-dot fs-5"></i>
+                        <div class="cityName">
+                            <!-- <h2>Cairo</h2> -->
+                        </div>
+                    </div>
+                    <div class="my-3 d-flex justify-content-center align-items-center gap-3 time ">
+                        <i class="fa-solid fa-clock fs-5"></i>
+                        <div class="hour">
+                            <!-- <h2 class="fs-3">2:43</h2> -->
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+            <div class="row  g-4 ">
+
+
+                 <div class="col-md-6" id="current">
+                    <!-- <div class="current-day rounded-4  ">
+                        <div class="day d-flex justify-content-between align-items-center pt-3 ps-2 pe-2 shadow-sm rounded-top-4">
+                            <p class="fs-5">Sunday</p>
+                            <p class="fs-5">2:65PM</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <ul class="data p-2 d-flex flex-column gap-1">
+                                <li class="temp fs-1 ">20°</li>
+                                <li>Wind: E, 6.5 Km/h</li>
+                                   <li> Pressure: 1016Mb</li>
+                                   <li> Humidity: 44%</li>
+                                   <li>Sunset: 05:50 PM</li>
+                                   <li>Sunrise: 06:38 AM</li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center w-50 h-100">
+                                <img src="images/favicon.png" class="w-50" alt="">
+                            </div>
+                        </div>
+                    </div> -->
+                 </div>
+                 <div class="col-md-3" id="day2">
+                    <!-- <div class="day2 rounded-4 d-flex justify-content-between align-items-center p-4">
+                       <div class="content d-flex flex-column gap-3 justify-content-center align-items-center">
+                        <h4>Sunday</h4>
+                       <span class="fs-5">20°</span>
+                       <span class="fst-italic">Sunny</span>
+                       <img src="images/favicon.png" class="w-50" alt="">
+                       </div>
+                    </div> -->
+                 </div>
+                 <div class="col-md-3" id="day3">
+                    <!-- <div class="day3 rounded-4 d-flex justify-content-between align-items-center p-4">
+                       <div class="content d-flex flex-column gap-3 justify-content-center align-items-center">
+                        <h4>Sunday</h4>
+                       <span class="fs-5">20°</span>
+                       <span class="fst-italic">Sunny</span>
+                       <img src="images/favicon.png" class="w-50" alt="">
+                       </div>
+                    </div> -->
+                 </div>       
+
+          </div>
+
+
+           <div class="row g-4 pt-5">
+            <div class="col-md-5">
+                <h3 class="mb-3">Upcoming forecast...</h3>
+                <div class="cards gap-2 p-2 rounded-4 d-flex flex-column">
+                    <!-- <div class="item p-2 d-flex justify-content-between align-items-center bg-danger ">
+                        <div class="d-flex flex-column">
+                            <span>00:25</span>
+                            <span>20 / 40</span>
+                        </div>
+                        <span>Sunny</span>
+                    </div>
+                    <div class="item p-2 d-flex justify-content-between align-items-center bg-danger ">
+                        <div class="d-flex flex-column">
+                            <span>00:25</span>
+                            <span>20 / 40</span>
+                        </div>
+                        <span>Sunny</span>
+                    </div>
+                    <div class="item p-2 d-flex justify-content-between align-items-center bg-danger ">
+                        <div class="d-flex flex-column">
+                            <span>00:25</span>
+                            <span>20 / 40</span>
+                        </div>
+                        <span>Sunny</span>
+                    </div>
+                    <div class="item p-2 d-flex justify-content-between align-items-center bg-danger ">
+                        <div class="d-flex flex-column">
+                            <span>00:25</span>
+                            <span>20 / 40</span>
+                        </div>
+                        <span>Sunny</span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-6 offset-md-1">
+                <h2>Other large cities...</h2>
+                <div class=" px-3 rounded-4 py-2" id="city1">
+                    <!-- <div class="largecity d-flex  justify-content-between align-items-center">
+                        <div class="data">
+                            <h5>US</h5>
+                            <h6>California</h6>
+                            <span>Sunny</span>
+                        </div>
+                        <div class="image w-25">
+                            <img src="images/favicon.png" class="w-50" alt="">
+                        </div>
+                    </div>                             -->
+                </div>
+                <div class="px-3 rounded-4 py-2 " id="city2">
+                    <!-- <div class="d-flex  justify-content-between align-items-center">
+                        <div class="data">
+                            <h5>China</h5>
+                            <h6>Beijing</h6>
+                            <span>Sunny</span>
+                        </div>
+                        <div class="image w-25">
+                            <img src="images/favicon.png" class="w-50" alt="">
+                        </div>
+                    </div>                             -->
+                </div>
+            </div>
+           </div>
+
+
+           
+        </div>
+    </section>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color : white;
+    --secondary-color : rgb(109, 109, 109);
+    --text-color : black;
+    --background-image : url("../images/backgroound2.jpg");
+}
+.dark-theme {
+    --primary-color : black;
+    --secondary-color :rgb(36, 36, 36) ;
+    --text-color : white ; 
+    --background-image : url("../images/background.jpg")
+}
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.container {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center center;
+}
+ #icon {
+    width: 35px;
+    cursor: pointer;
+ }
+ .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ @media (max-width:767px) {
+    .search {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+ }
+.name {
+    width: fit-content;
+}
+.time {
+    width: fit-content;
+}
+nav input {
+    border: 0;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 350px;   
+    color: var(--text-color); 
+}
+nav input:focus {
+    outline: 0;
+}
+nav .currentlocation {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+.weather {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.weather i {
+    color: rgb(187, 236, 248);
+}
+.current-day {
+    color: var(--primary-color);
+    height: 300px;
+    background-color: rgb(187, 236, 248);
+}
+.current-day .day {
+    background-color: rgb(157, 211, 224);
+}
+ul {
+    list-style: none;
+}
+ul .temp{
+    font-weight:600;
+    color: var(--primary-color);
+}
+ul li {
+    color: var(--secondary-color);
+    font-size: 17px;
+    font-weight: 400;
+}
+.group li {
+    color: var(--text-color);
+}
+.day2,
+.day3 {
+    background-color: var(--secondary-color);
+    height: 300px;
+}
+.day2 img,
+.day3 img {
+    width: 60%;
+}
+@media(max-width:1150px) {
+    .day2,
+    .day3{
+        height: fit-content;
+    }
+}
+.cards{
+    background-color: var(--secondary-color);
+    
+}
+.item{
+    color: var(--text-color);
+    border-radius: 10px;
+    position: relative;
+}
+.item::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    background-color: rgb(157, 211, 224);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.largecity{
+    background-color: var(--secondary-color);
+}
